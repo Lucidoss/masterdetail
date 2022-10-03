@@ -1,0 +1,23 @@
+<ion-header [translucent]="true" class="unselectable">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button>
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Details
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="unselectable"> 
+    <ion-label>
+      <br><h2>{{film.title}}</h2><br>
+      <img alt="Photo non contractuelle" src="{{film.posterUrl}}" />
+      <br><br><p><ion-icon name="calendar-outline">&nbsp;</ion-icon> Année : {{film.year}}</p><br>
+      <p><ion-icon name="film-outline">&nbsp;</ion-icon> Genres : {{film.genres}}</p><br>
+      <p><ion-icon name="man-outline">&nbsp;</ion-icon> Director : {{film.director}}</p><br>
+      <p><ion-icon name="people-outline">&nbsp;</ion-icon> Acteurs : {{film.actors}}</p><br>
+      <p><ion-icon name="help-outline">&nbsp;</ion-icon>L'intrigue : {{film.plot}}</p>
+    </ion-label>
+</ion-content>
